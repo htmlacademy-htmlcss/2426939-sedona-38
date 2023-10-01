@@ -1,0 +1,42 @@
+.hero
+{
+  background: url(../images/index-background.jpg) no-repeat;
+  width: 1200px;
+  min-height: 415px;
+}
+.hero-img
+{
+  text-align: center;
+}
+.advantage-icon
+{
+  width: 75px;
+  height: 72px;
+}
+.advantage-icon-home
+{
+  background: url(../images/home.svg) no-repeat;
+}
+.advantage-icon-food {
+  background: url(../images/burger.svg) no-repeat;
+}
+.advantage-icon-souvenir {
+  background: url(../images/souvenirs.svg) no-repeat;
+}
+.subscribe
+{
+  background: url('../images/subscribe-background.jpg') no-repeat;
+  width:1200px;
+  min-height:415px;
+}
+.inner-background
+{
+  background: url('../images/background-catalog.jpg') no-repeat;
+  width: 1200px;
+  min-height: 408px;
+}
+.subscribe-none
+{
+
+  background-image: none;
+}
