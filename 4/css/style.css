@@ -1,0 +1,263 @@
+@font-face {
+  font-family: "PT sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body
+{
+    font-family: "PT sans", serif;
+    background-color: #ffffff;
+    color:#333333;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+.hero
+{
+  background: url("../images/index-background.jpg") no-repeat;
+  width: 1200px;
+  min-height: 415px;
+}
+.hero-img
+{
+  text-align: center;
+}
+a
+{
+  text-decoration: none;
+}
+.advantage-icon
+{
+  width: 75px;
+  height: 72px;
+}
+.advantage-icon-home
+{
+  background: url("../images/home.svg") no-repeat;
+}
+.advantage-icon-food {
+  background: url("../images/burger.svg") no-repeat;
+}
+.advantage-icon-souvenir {
+  background: url("../images/souvenirs.svg") no-repeat;
+}
+.subscribe
+{
+  background: url("../images/subscribe-background.jpg") no-repeat;
+  width:1200px;
+  min-height:415px;
+}
+.inner-background
+{ background-color: #000000;
+  color:white;
+  background: url("../images/background-catalog.jpg") no-repeat;
+  width: 1200px;
+  min-height: 408px;
+}
+.subscribe-none
+{
+  background-image: none;
+}
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.button {
+  color: white;
+  padding: 8px 50px;
+  font-size: 16px;
+  border-radius: 4px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #756157;
+  border: none;
+}
+.hero-description
+{
+  font-size: 22px;
+  line-height: 26px;
+}
+.advantage-item-blue
+{
+  background-color: #82B3D3;
+}
+.advantage-item-gray-blue
+{
+  background:#83B3D333;
+
+}
+.advantage-item
+{
+  text-align: center;
+}
+.advantage-title
+{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.search-hotel
+{
+text-align: center;
+}
+.text
+{   text-align: center;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.button-search
+{
+    font-size: 20px;
+    line-height: 36px;
+
+}
+.title
+{
+    color: #000000;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.white {
+  color: white;
+}
+.button-blue
+{
+  background-color: #82B3D3;
+
+}
+.button-reset
+{
+  background-color:none;
+
+}
+.button-green
+{
+  background-color: #7DB54F;
+}
+.button-blue
+{
+    background-color: #82B3D3;
+}
+.button-subscribe-blue
+{
+    background-color:#82B3D3;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+
+}
+.inner-header-title
+{
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+.hotel-card-title
+{
+    color:#000000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+.hotel-card-rate
+{
+  width: 140px;
+  height: 37px;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 9px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.pagination-item
+{
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  background-color: #82B3D3;
+}
+.pagination-link
+{
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    padding: 25px 0 0 22px;
+}
+.pagination-link-current
+{
+  color: #000000;
+}
+.pagination-item-current
+{
+  background-color: #F2F2F2;
+}
+.subscribe
+{
+  text-align: center;
+}
+.breadcrumbs-link
+{
+  color:inherit;
+  font-size: 16px;
+  line-height: 21px;
+}
+.footer-telephone
+{
+    color:  #000000;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.navigation-number
+{
+    border-radius: 10px;
+    background:#7DB54F;
+    color: #ffffff;
+    text-align: center;
+    font-size: 10px;
+    line-height: 10px;
+}
+.sort-item
+{
+    width: 16px;
+    height: 14px;
+    padding: 14px 12px;
+    border-radius: 4px;
+    border: 2px solid#E5E5E5;
+}
+.sort-link-card
+{
+  background: url("../images/card.svg") no-repeat;
+}
+.sort-link-comp {
+  background: url("../images/comp.svg") no-repeat;
+}
+.sort-link-list {
+  background: url("../images/list.svg") no-repeat;
+}
+.sort-item-dark
+{
+  border: 2px solid#000000;
+}
