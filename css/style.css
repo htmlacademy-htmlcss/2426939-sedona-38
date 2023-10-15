@@ -24,9 +24,8 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+
+  height: 100%;
   margin: 0;
   font-family: "PT sans", sans-serif;
   color: #333333;
@@ -39,12 +38,31 @@ body {
   flex-grow: 1;
 }
 
+.user-link {
+  min-width: 18px;
+  min-height: 18px;
+  display: inline-block;
+  padding: 22px 15px;
+}
+
+
 .header-navigation,
 .footer-container {
   display: flex;
   width: 1060px;
   margin: 0 auto;
-  align-items: center;
+}
+
+.header-logo {
+
+  margin-right: 28px;
+}
+
+.header-image {
+  display: block;
+  margin-bottom: -12px;
+  position: relative;
+  z-index: 2;
 }
 
 .footer-container {
@@ -52,14 +70,16 @@ body {
   padding: 40px 0 30px 0;
 }
 
-.navigation-item:not(:last-child) {
-  margin-right: 32px;
-}
+
 
 .hero {
-  background: url("../images/index-background.jpg") no-repeat;
-  width: 1200px;
-  min-height: 415px;
+  padding-top: 49px;
+  padding-bottom: 78px;
+  background-image: url("../images/index-background.jpg"), url("../images/divider.png");
+  background-repeat: no-repeat;
+  background-size: cover contain;
+  background-position: center bottom;
+
 }
 
 .header,
@@ -70,11 +90,14 @@ body {
 }
 
 .page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
-
 
 .hero-img {
   text-align: center;
@@ -94,14 +117,24 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 507px;
+  margin-right: 285px;
+  width: 339px;
 }
 
 .user-list {
-  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
   width: 268px;
+  padding: 0;
+}
+
+.user-item:nth-child(2) {
+  margin-right: 16px;
 }
 
 .advantage-icon-home {
@@ -118,12 +151,15 @@ body {
 
 .subscribe {
   background: url("../images/subscribe-background.jpg") no-repeat;
+  background-size: cover;
   width: 1200px;
   min-height: 415px;
+  padding: 96px 258px 104px;
+
 }
 
 .subscribe-email {
-  font-family: "PT sans", sans-serif;
+  font-family: inherit;
   width: 452px;
   padding: 12px 20px;
   border-radius: 4px 0 0 4px;
@@ -131,14 +167,13 @@ body {
   color: #000000;
   font-size: 18px;
   line-height: 24px;
+  border: none;
 }
 
 .inner-background {
   background-color: #000000;
   color: white;
   background: url("../images/background-catalog.jpg") no-repeat;
-  width: 1200px;
-  min-height: 408px;
 }
 
 .subscribe-none {
@@ -146,6 +181,8 @@ body {
 }
 
 .navigation-link {
+  display: inline-block;
+  padding: 20px 16px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -156,6 +193,7 @@ body {
 
 .button {
   color: white;
+  font-family: inherit;
   padding: 8px 50px;
   font-size: 16px;
   border-radius: 4px;
@@ -165,51 +203,80 @@ body {
   background-color: #756157;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .hero-description {
   font-size: 22px;
   line-height: 26px;
+
 }
 
-.advantage-item-blue {
-  background-color: #82b3d3;
-  color: white;
-}
+
 
 .advantage-item-gray-blue {
   background: rgba(131, 179, 211, 0.2);
-
 }
 
 .advantage-container {
+  padding-top: 69px;
+  padding-bottom: 90px;
   width: 651px;
   margin: 0 auto;
 }
 
-.advantage-item {
+.advantage-item,
+.advantage-item-container {
   width: 400px;
   min-height: 385px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 103px 85px;
-  margin-bottom: 15px;
+
 }
 
-.advantage-title {
+.advantage-item-blue {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  width: 1200px;
+  background-color: #82b3d3;
+  color: white;
+}
+
+.advantage-image {
+  display: block;
+  min-height: 100%;
+}
+
+.subtitle {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+
+  max-width: 175px;
+}
+
+.advantage-subtitle {
+  margin-bottom: 60px;
+}
+
+.advantage-subject {
+  margin: 30px 0;
 }
 
 .search-hotel {
+  padding: 96px 304px;
   text-align: center;
 }
 
 .text {
+  margin: 0;
   text-align: center;
   font-size: 22px;
   line-height: 26px;
@@ -223,12 +290,15 @@ body {
 }
 
 .title {
+  margin: 0;
+  padding: 0;
   color: #000000;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+
 }
 
 .subscribe-title,
@@ -294,7 +364,16 @@ body {
   text-transform: uppercase;
 }
 
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .pagination-item {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0 13px 0;
   width: 60px;
   height: 60px;
   border-radius: 4px;
@@ -302,12 +381,13 @@ body {
 }
 
 .pagination-link {
+
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  padding: 25px 0 0 22px;
+
   text-decoration: none;
 }
 
@@ -317,10 +397,6 @@ body {
 
 .pagination-item-current {
   background-color: #f2f2f2;
-}
-
-.subscribe {
-  text-align: center;
 }
 
 .breadcrumbs-link {
@@ -396,8 +472,13 @@ body {
   display: flex;
 }
 
+.navigation-link-favorite {
+  min-width: 18px;
+  min-height: 18px;
+}
+
 .sorting {
-  font-family: "PT sans", sans-serif;
+  font-family: inherit;
   width: 292px;
   height: 49px;
   padding: 12px 20px;
@@ -421,6 +502,62 @@ body {
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   width: 142px;
   justify-content: space-between;
+}
+
+.navigation-button {
+  display: inline-block;
+  padding: 8px 32px;
+  align-self: flex-start;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantage-title {
+  margin-bottom: 25px;
+}
+
+.advantage-description {
+  margin: 0;
+}
+
+.container-bottom-advantage {
+  max-width: 505px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.title-bottom {
+  margin-bottom: 20px;
+}
+
+.advantage-list:nth-of-type(2) .advantage-item {
+  padding: 80px 85px;
+}
+
+.search-hotel-title {
+  margin-bottom: 20px;
+}
+
+.search-hotel-text {
+  margin-bottom: 54px;
+}
+
+.subscribe-title {
+  margin-bottom: 20px;
+}
+
+.subscribe-text {
+  margin-bottom: 54px;
 }
