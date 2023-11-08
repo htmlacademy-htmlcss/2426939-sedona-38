@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
@@ -62,7 +64,7 @@
           </header>
           <section data-test="filter" class="filter">
             <h2 class="visually-hidden">Фильтрация каталога</h2>
-            <form action="#" method="get">
+            <form action="https://echo.htmlacademy.ru/" method="post">
               <div class="filter-container">
                 <fieldset class="filter-catalog">
                   <legend class="filter-catalog-title">Инфраструктура:</legend>
@@ -119,20 +121,20 @@
                     </li>
                     <li class="filter-catalog-price">
                       <label class="text-label" for="max-price">до</label>
-                      <input class="text-input" type="text" id="max-price" name="max-price" value="9000">
+                      <input class="text-input text-input-right" type="text" id="max-price" name="max-price"
+                        value="9000">
                     </li>
                   </ul>
                   <div class="range-slider">
                     <div class="range-bar">
-                      <button type="button" class="range-handle range-handle-left">
+                      <button class="range-handle range-handle-left" type="button">
                         <span class="visually-hidden">Изменить минимальную цену</span>
                       </button>
-                      <button type="button" class="range-handle range-handle-right">
+                      <button class="range-handle range-handle-right" type="button">
                         <span class="visually-hidden">Изменить минимальную цену</span>
                       </button>
                     </div>
                   </div>
-
                 </fieldset>
                 <div class="filter-button">
                   <button type="submit" class="button-apply">Применить</button>
@@ -155,20 +157,19 @@
               <ul class="sort-list">
                 <li class="sort-item">
                   <a href="" class="sort-link sort-link-dark">
-                    <img class="sort-image" src="images/card.svg" width="16" height="14"
-                      alt="Упорядочивание по карточкам">
+                    <img class="sort-image" src="images/card.svg" width="16" height="14" alt="">
                     <span class="visually-hidden"> Упорядочивание по карточкам</span>
                   </a>
                 </li>
                 <li class="sort-item ">
                   <a href="" class="sort-link">
-                    <img class="sort-image" src="images/comp.svg" width="16" height="14" alt="Упорядочивание галереей">
+                    <img class="sort-image" src="images/comp.svg" width="16" height="14" alt="">
                     <span class="visually-hidden">Упорядочивание галереей</span>
                   </a>
                 </li>
                 <li class="sort-item">
                   <a href="" class="sort-link">
-                    <img class="sort-image" src="images/list.svg" width="16" height="14" alt="Упорядочивание списком">
+                    <img class="sort-image" src="images/list.svg" width="16" height="14" alt="">
                     <span class="visually-hidden">Упорядочивание списком</span>
                   </a>
                 </li>
@@ -177,7 +178,7 @@
             <div class="hotel-container">
               <div class="hotel-card">
                 <a href="product.html" class="hotel-card-img">
-                  <img src="images/catalog/hotel-1.jpg" alt="Amara Resort & Spa">
+                  <img src="images/catalog/hotel-1.jpg" alt="">
                 </a>
                 <a href="product.html" class="hotel-card-link">
                   <h3 class="hotel-card-title">Amara Resort & Spa</h3>
@@ -185,7 +186,7 @@
                 <span class="hotel-card-text">Гостиница</span>
                 <span class="hotel-card-price">От 4000 Р</span>
                 <a href="#" class="button hotel-card-button">Подробнее</a>
-                <button class="button button-card">В избранное</button>
+                <button type="button" class="button button-card">В избранное</button>
                 <div class="stars stars-4">
                   <span class="visually-hidden">Четырехзвездночный отель</span>
                 </div>
@@ -193,7 +194,7 @@
               </div>
               <div class="hotel-card">
                 <a href="product.html" class="hotel-card-img">
-                  <img src="images/catalog/hotel-2.jpg" alt="Villas at Poco Diablo">
+                  <img src="images/catalog/hotel-2.jpg" alt="">
                 </a>
                 <a href="product.html" class="hotel-card-link">
                   <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
@@ -201,7 +202,7 @@
                 <span class="hotel-card-text">Гостиница</span>
                 <span class="hotel-card-price">От 5000 Р</span>
                 <a href="#" class="button hotel-card-button">Подробнее</a>
-                <button class="button button-push">В избранном</button>
+                <button type="button" class="button button-push">В избранном</button>
                 <div class="stars stars-4">
                   <span class="visually-hidden">Четырехзвездночный отель</span>
                 </div>
@@ -209,7 +210,7 @@
               </div>
               <div class="hotel-card">
                 <a href="product.html" class="hotel-card-img">
-                  <img src="images/catalog/hotel-3.jpg" alt="Desert Quail Inn">
+                  <img src="images/catalog/hotel-3.jpg" alt="">
                 </a>
                 <a href="product.html" class="hotel-card-link">
                   <h3 class="hotel-card-title">Desert Quail Inn</h3>
@@ -217,7 +218,7 @@
                 <span class="hotel-card-text">Гостиница</span>
                 <span class="hotel-card-price">От 2500 Р</span>
                 <a href="#" class="button hotel-card-button">Подробнее</a>
-                <button class="button button-card">В избранное</button>
+                <button type="button" class="button button-card">В избранное</button>
                 <div class="stars stars-3">
                   <span class="visually-hidden">Трехзвездочный отель</span>
                 </div>
@@ -225,7 +226,7 @@
               </div>
               <div class="hotel-card">
                 <a href="product.html" class="hotel-card-img">
-                  <img src="images/catalog/hotel-4.jpg" alt="GreenTree Inn">
+                  <img src="images/catalog/hotel-4.jpg" alt="">
                 </a>
                 <a href="product.html" class="hotel-card-link">
                   <h3 class="hotel-card-title">GreenTree Inn</h3>
@@ -233,7 +234,7 @@
                 <span class="hotel-card-text">Гостиница</span>
                 <span class="hotel-card-price">От 1500 Р</span>
                 <a href="#" class="button hotel-card-button">Подробнее</a>
-                <button class="button button-card">В избранное</button>
+                <button type="button" class="button button-card">В избранное</button>
                 <div class="stars stars-2">
                   <span class="visually-hidden">Двухзвездочный отель</span>
                 </div>
@@ -253,12 +254,14 @@
               <li class="pagination-item">
                 <a href="#" class="pagination-link">4</a>
               </li>
+
               <li class="pagination-item pagination-item-current">
-                <a href="#" class="pagination-link  pagination-link-current">...</a>
+                <a href="#" class="pagination-link  pagination-link-dott">...</a>
               </li>
               <li class="pagination-item">
                 <a href="#" class="pagination-link">10</a>
               </li>
+
             </ul>
           </div>
         </section>
@@ -266,7 +269,7 @@
           <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
           <p class="text subscribe-text">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
           <form class="form-search" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe-email" type="email" name="subscribe-email" placeholder="Ваш e-mail">
+            <input class="subscribe-email" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
             <button class="button button-subscribe">Подписаться</button>
           </form>
         </section>
@@ -276,19 +279,18 @@
           <ul class="social-list">
             <li class="social-item">
               <a href="https://vk.com/htmlacademy" class="social-link">
-                <svg aria-hidden="true" focusable="false" class="footer-image" xmlns="http://www.w3.org/2000/svg"
-                  width="25" height="15" viewBox="0 0 25 15">
+                <svg role="img" aria-hidden="true" focusable="false" class="footer-image"
+                  xmlns="http://www.w3.org/2000/svg" width="25" height="15" viewBox="0 0 25 15">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M24.1164 1.80445C24.2824 1.25845 24.1164 0.856445 23.3214 0.856445H20.6964C20.0284 0.856445 19.7204 1.20345 19.5534 1.58645C19.5534 1.58645 18.2184 4.78245 16.3274 6.85845C15.7154 7.46045 15.4374 7.65145 15.1034 7.65145C14.9364 7.65145 14.6854 7.46045 14.6854 6.91345V1.80445C14.6854 1.14845 14.5014 0.856445 13.9454 0.856445H9.81738C9.40038 0.856445 9.14938 1.16045 9.14938 1.44945C9.14938 2.07045 10.0954 2.21445 10.1924 3.96245V7.76045C10.1924 8.59345 10.0394 8.74444 9.70538 8.74444C8.81538 8.74444 6.65038 5.53345 5.36538 1.85945C5.11638 1.14445 4.86438 0.856445 4.19338 0.856445H1.56638C0.816382 0.856445 0.666382 1.20345 0.666382 1.58645C0.666382 2.26845 1.55638 5.65645 4.81138 10.1374C6.98138 13.1974 10.0364 14.8564 12.8194 14.8564C14.4884 14.8564 14.6944 14.4884 14.6944 13.8534V11.5404C14.6944 10.8034 14.8524 10.6564 15.3814 10.6564C15.7714 10.6564 16.4384 10.8484 17.9964 12.3234C19.7764 14.0724 20.0694 14.8564 21.0714 14.8564H23.6964C24.4464 14.8564 24.8224 14.4884 24.6064 13.7604C24.3684 13.0364 23.5184 11.9854 22.3914 10.7384C21.7794 10.0284 20.8614 9.26345 20.5824 8.88045C20.1934 8.38945 20.3044 8.17044 20.5824 7.73345C20.5824 7.73345 23.7824 3.30745 24.1154 1.80445H24.1164Z" />
                 </svg>
-              </a>
-              <span class="visually-hidden">ВКонтакте</span>
+                <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="social-item">
               <a href="https://t.me/htmlacademy" class="social-link">
-                <svg aria-hidden="true" focusable="false" class="footer-image" xmlns="http://www.w3.org/2000/svg"
-                  width="18" height="17" viewBox="0 0 18 17">
+                <svg role="img" aria-hidden="true" focusable="false" class="footer-image"
+                  xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
                   <path
                     d="M16.785 0.955705L0.840489 7.1042C-0.247661 7.54126 -0.241365 8.14828 0.640845 8.41897L4.73445 9.69597L14.2058 3.72014C14.6537 3.44766 15.0629 3.59424 14.7265 3.89281L7.05283 10.8183H7.05103L7.05283 10.8192L6.77045 15.0387C7.18413 15.0387 7.36669 14.8489 7.59871 14.625L9.58705 12.6915L13.7229 15.7464C14.4855 16.1664 15.0332 15.9506 15.2229 15.0405L17.9379 2.2453C18.2158 1.13107 17.5126 0.626562 16.785 0.955705Z" />
                 </svg>
@@ -297,8 +299,8 @@
             </li>
             <li class="social-item">
               <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
-                <svg aria-hidden="true" focusable="false" class="footer-image" xmlns="http://www.w3.org/2000/svg"
-                  width="23" height="18" viewBox="0 0 23 18" fill="none">
+                <svg role="img" aria-hidden="true" focusable="false" class="footer-image"
+                  xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
                   <path
                     d="M18.9402 0.356445H3.50738C1.64668 0.356445 0.333252 1.9502 0.333252 3.75645V13.8502C0.333252 15.7627 1.64668 17.3564 3.50738 17.3564H19.1591C20.8009 17.3564 22.3333 15.7627 22.3333 13.9564V3.75645C22.1143 1.9502 20.8009 0.356445 18.9402 0.356445ZM7.99494 12.8939V4.81894L15.3283 8.85645L7.99494 12.8939Z" />
                 </svg>
@@ -308,8 +310,8 @@
           </ul>
           <a href="tel:+78128121212" class="footer-telephone">+7 (812) 812-12-12</a>
           <a href="https://htmlacademy.ru/" class="footer-logo">
-            <svg aria-hidden="true" focusable="false" class="footer-logo" xmlns="http://www.w3.org/2000/svg" width="115"
-              height="34" viewBox="0 0 115 34" fill="none">
+            <svg role="img" aria-hidden="true" focusable="false" class="footer-logo" xmlns="http://www.w3.org/2000/svg"
+              width="115" height="34" viewBox="0 0 115 34" fill="none">
               <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" />
               <path
                 d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z" />
@@ -338,23 +340,29 @@
         </div>
       </footer>
     </div>
-    <div class="modal-container  modal-container-close">
+    <!--Для появления попапа необходимо убрать класс modal-container-close-->
+    <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <button type="button" class="modal-close-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="current-color">
+            <path
+              d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" />
+          </svg>
           <span class="visually-hidden">Закрыть форму</span>
         </button>
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="field-group">
-            <label for="modal-group" class="modal-label">Дата Заезда:</label>
-            <input id="modal-group" name="arrival-date" class="modal-input" placeholder="Укажите дату" type="text">
+            <label for="arrival" class="modal-label">Дата Заезда:</label>
+            <input id="arrival" name="arrival-date" class="modal-input" placeholder="Укажите дату" type="text" required>
             <span class="modal-text modal-text-error">
               Мы не можем отправить вас в прошлое.
             </span>
           </p>
           <p class="field-group">
-            <label for="modal-group-2" class="modal-label">Дата Выезда:</label>
-            <input id="modal-group-2" name="departure-date" class="modal-input" placeholder="Укажите дату" type="text">
+            <label for="departure" class="modal-label">Дата Выезда:</label>
+            <input id="departure" name="departure-date" class="modal-input" placeholder="Укажите дату" type="text"
+              required>
             <span class="modal-text">
               На эти даты есть свободные номера. Пока есть.
             </span>
@@ -363,8 +371,13 @@
             <p class="field-group-quantity">
               <label for="adult" class="modal-label modal-label-adult">Взрослые:</label>
               <button class="modal-change-button less-quantity"></button>
-              <input id="adult" name="field-adult" class="field-people" type="number" value="2" max="99">
-              <button class="modal-change-button more-quantity"></button>
+              <input id="adult" name="field-adult" class="field-people" type="number" value="2" max="99" required>
+              <button class="modal-change-button more-quantity">
+                <svg class="modal-plus" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                  fill="none">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                </svg>
+              </button>
             </p>
             <p class="field-group-quantity">
               <span class="modal-label">
@@ -373,14 +386,20 @@
                   <button class="tooltip-toggle" aria-labelledby="tooltip-label-date" type="button">
                     <img src="images/tooltip.svg" width="26" height="26" alt="Уточняющая информация о детях">
                   </button>
-                  <span role="tooltip" id="tooltip-label-date" class="tooltip-text">Укажите количество детей, которые будут
+                  <span role="tooltip" id="tooltip-label-date" class="tooltip-text">Укажите количество детей, которые
+                    будут
                     с вами, возраст которых от 6 до 18
                     лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
               </span>
               <button class="modal-change-button less-quantity"></button>
-              <input id="child" name="field-child" class="field-people" type="number" value="2" max="99">
-              <button class="modal-change-button more-quantity"></button>
+              <input id="child" name="field-child" class="field-people" type="number" value="2" max="99" required>
+              <button class="modal-change-button more-quantity">
+                <svg class="modal-plus" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                  fill="none">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                </svg>
+              </button>
             </p>
           </div>
           <button type="submit" class="modal-button">Найти</button>
@@ -388,7 +407,4 @@
       </div>
     </div>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-
 </html>
