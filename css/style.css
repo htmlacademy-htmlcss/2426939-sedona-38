@@ -216,7 +216,7 @@ body {
 }
 
 .navigation-link:hover {
-  background-color: #E6E6E6;
+  background-color: #808080;
   color: #ffffff;
 }
 
@@ -703,7 +703,7 @@ body {
 }
 
 .sorting:hover {
-  border: 2px solid #68a2ca;
+  outline: 2px solid #68a2ca;
 }
 
 .sorting:focus {
@@ -795,7 +795,7 @@ body {
   margin-bottom: 20px;
 }
 
-.advantage-list:nth-of-type(2) .advantage-item {
+.service .advantage-item {
   padding: 80px 85px;
 }
 
@@ -970,7 +970,7 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-.modal-plus:hover {
+.more-quantity :hover .modal-plus {
   fill: #000000;
 }
 
@@ -1166,7 +1166,7 @@ body {
 }
 
 .range-handle:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .range-handle-left {
@@ -1422,4 +1422,21 @@ body {
 
 .modal-container-close {
   display: none;
+}
+
+.button-disabled {
+  background-color: #e5e5e5;
+}
+
+.button-disabled:focus,
+.button-disabled:hover,
+input:disabled {
+  background-color: #e5e5e5;
+  outline: none;
+  cursor: default;
+}
+
+.sorting:disabled {
+  border: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
