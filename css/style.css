@@ -191,6 +191,7 @@ body {
 .inner-background {
   color: #ffffff;
   background: #795548 url("../images/background-catalog.jpg") no-repeat;
+  background-size: cover;
   padding: 70px;
   padding-top: 35px;
 }
@@ -301,7 +302,6 @@ body {
 .advantage-image {
   display: block;
   min-height: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -519,7 +519,6 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  width: 400px;
   gap: 8px;
 }
 
@@ -547,6 +546,7 @@ body {
   padding: 0 10px;
   min-width: 60px;
   height: 60px;
+  border-radius: 4px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -577,6 +577,7 @@ body {
 .footer-telephone {
   color: #000000;
   display: inline-block;
+  width: 331px;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
@@ -627,8 +628,9 @@ body {
 
 .sort-list {
   display: flex;
+  flex-wrap: wrap;
   width: 160px;
-  justify-content: space-between;
+  gap: 8px;
   margin: 0;
   padding: 0;
 }
@@ -661,6 +663,7 @@ body {
 
 .hotel-subtitle {
   margin-right: auto;
+  width: 400px;
   color: #000000;
   font-size: 30px;
   font-weight: 700;
@@ -950,7 +953,7 @@ body {
 .text-input {
   width: 143px;
   display: inline-block;
-  padding: 12px 20px;
+  padding: 12px 40px 12px 20px;
   border-radius: 4px 0 0 4px;
   border: none;
   color: #000000;
@@ -1184,7 +1187,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(242, 242, 242, 0.8);
 }
 
 .modal {
@@ -1345,6 +1348,7 @@ body {
 
 .modal-label-adult {
   margin-right: 46px;
+  width: 90px;
 }
 
 .field-group-container {
@@ -1354,9 +1358,10 @@ body {
 }
 
 .modal-label-сhildren {
-  position: relative;
+  display: inline-block;
   margin-right: 46px;
   padding-right: 36px;
+  width: 86px;
 }
 
 .modal-button {
@@ -1381,6 +1386,7 @@ body {
 
 .tooltip-text {
   width: 256px;
+  position: absolute;
   display: none;
   color: #ffffff;
   border-radius: 10px;
@@ -1390,7 +1396,6 @@ body {
   padding: 19px 18px 24px 22px;
   background: #333333;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
-  position: absolute;
   top: 42px;
   z-index: 1;
   right: 50%;
@@ -1430,7 +1435,10 @@ body {
 
 .button-disabled:focus,
 .button-disabled:hover,
-input:disabled {
+.subscribe-email:disabled,
+.modal-input:disabled,
+.field-people:disabled,
+.text-input:disabled {
   background-color: #e5e5e5;
   outline: none;
   cursor: default;
@@ -1439,4 +1447,8 @@ input:disabled {
 .sorting:disabled {
   border: rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.3);
+}
+
+.user-item-bottom {
+  padding: 8px 0;
 }
