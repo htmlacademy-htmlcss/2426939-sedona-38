@@ -973,7 +973,7 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-.more-quantity :hover .modal-plus {
+.more-quantity:hover .modal-plus {
   fill: #000000;
 }
 
